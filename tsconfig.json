@@ -1,0 +1,52 @@
+{
+   "compilerOptions": {
+      // ===== development
+      "sourceMap": true,
+      // ===== language features
+      "jsx": "preserve",
+      "moduleResolution": "node",
+      "module": "esnext",
+      "experimentalDecorators": true,
+      // ===== transpiling
+      "target": "esnext",
+      "importHelpers": true, // importing helper functions from tslib
+      "noEmitHelpers": true, // disable emitting inline helper function
+      "noErrorTruncation": true,
+      "esModuleInterop": true,
+      "allowJs": true,
+      // ===== typechecking
+      "noUnusedLocals": true,
+      "allowSyntheticDefaultImports": true,
+      "noImplicitThis": true,
+      "skipDefaultLibCheck": true,
+      // ===== types
+      "lib": [
+         "es6",
+         "dom",
+         // "es2016",
+         "es2017.object"
+      ],
+      "types": [
+         "webpack-env",
+         "node",
+         "cypress",
+         "chai"
+      ],
+      // ===== project settings
+      "rootDir": "./",
+      "baseUrl": "./src",
+      "paths": {
+         "~/*": [
+            "./*"
+         ]
+      },
+      "plugins": [
+         {
+         }
+      ]
+   },
+   "exclude": [
+      "bin",
+      "node_modules",
+   ]
+}

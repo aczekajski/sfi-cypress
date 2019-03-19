@@ -1,0 +1,30 @@
+{
+  "name": "sfi-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aczekajski/sfi-cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aczekajski/sfi-cypress/issues"
+  },
+  "homepage": "https://github.com/aczekajski/sfi-cypress#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.4",
+    "@cypress/webpack-preprocessor": "^4.0.3",
+    "babel-loader": "^8.0.5",
+    "cypress": "^3.2.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.6"
+  }
+}
