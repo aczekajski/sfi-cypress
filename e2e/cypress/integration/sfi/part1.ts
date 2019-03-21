@@ -12,7 +12,7 @@ describe('Szukanie rzeczy', () => {
         it('should have 4 inputs, including "Clear"', () => {
             cy.get('input').should('have.length', 4);
             cy.get('input[value="Clear"]');
-            cy.get('form').contains('Clear').click();
+            // cy.get('form').contains('Clear').click();
         });
 
         it('should have disabled Submit button', () => {
@@ -24,6 +24,7 @@ describe('Szukanie rzeczy', () => {
 
     it('should have links in menu', () => {
         cy.visit('localhost:3000');
+        cy.get('a').should('have.length', 2); // fail
         cy.get('nav').within(() => {
             cy.get('a').should('have.length', 2);
         });
@@ -33,6 +34,7 @@ describe('Szukanie rzeczy', () => {
     it('candidate page', () => {
         cy.server();
         cy.route('http://localhost:3030/candidates/42', { name: 'Stubbed Name', age: 42, checked: true });
+        
         cy.visit('localhost:3000/candidate/42');
         cy.contains('Stubbed Name');
         cy.contains(`${42} years`);
