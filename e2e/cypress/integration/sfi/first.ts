@@ -1,5 +1,5 @@
 describe('Pierwszy test', () => {
    it('Tadaa', () => {
-      // expect(...).to...
+      expect(true).to.equal(true);
    });
 });
